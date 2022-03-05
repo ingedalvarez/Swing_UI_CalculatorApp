@@ -1,6 +1,8 @@
 package calculator;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Aplicacion {
     private JPanel root;
@@ -24,4 +26,47 @@ public class Aplicacion {
     private JButton btnCero;
     private JButton brnIgual;
     private JButton btnSuma;
+
+    public Aplicacion() {
+        btnPunto.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        btnReset.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        ActionListener listenerDigitos = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        };
+        btnSiete.addActionListener(listenerDigitos);
+        btnOcho.addActionListener(listenerDigitos);
+        btnNueve.addActionListener(listenerDigitos);
+        btnCuatro.addActionListener(listenerDigitos);
+        btnCinco.addActionListener(listenerDigitos);
+        btnSeis.addActionListener(listenerDigitos);
+        btnUno.addActionListener(listenerDigitos);
+        btnDos.addActionListener(listenerDigitos);
+        btnTres.addActionListener(listenerDigitos);
+        btnCero.addActionListener(listenerDigitos);
+
+        ActionListener listenerOperaciones = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        };
+        btnDivision.addActionListener(listenerOperaciones);
+        btnMultiplicacion.addActionListener(listenerOperaciones);
+        btnResta.addActionListener(listenerOperaciones);
+        brnIgual.addActionListener(listenerOperaciones);
+        btnSuma.addActionListener(listenerOperaciones);
+    }
 }
